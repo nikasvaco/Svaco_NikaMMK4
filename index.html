@@ -11,16 +11,37 @@
 	h2 {color: purple; font-weight: 600; font-style: normal; font-family: 'Dancing Script', sans-serif;}
 	ul {display: block;list-style: circle;}
 	.small { font-size: 12px; float: right;}
-	
-	
+	#form1 {position: absolute; right: 0; top: 0;box-shadow: 0 0 7px rgba(250,108,153,1)}
+	button {background-color:#ffcccc;} 
   </style>
 <title>Sylvia Plath</title>
 </head>
 
+
+
 <body>
 <h1>Sylvia Plath</h1>
 <br>
+<form id="form1">
+<fieldset>
+	<legend>Osobni podatci</legend>
+    <label for="ime">Ime:</label><br>
+    <input type="text" id="ime" name="ime" required><br><br>
+
+    <label for="prezime">Prezime:</label><br>
+    <input type="prezime" id="prezime" name="prezime" required><br><br>
+
+    <label for="email">E-Mail:</label><br>
+    <textarea id="email" name="email"></textarea><br><br>
+</fieldset>
+
+    <input type="submit" value="Unesi" style="background-color: #ccffcc; border: 2px solid black;">
+	<button type="reset">Obriši podatke</button>
+ </form>
+ 
 <p><strong>Sylvia Plath</strong> bila je američka pjesnikinja i autorica. Rođena je 27. listopada 1932. godine u Bostonu, a preminula je 11. veljače 1963. godine. <p>
+<br>
+<br>
 <br>
 <h2>Obiteljski život</h2>
 <p>Plath je bila najstarija od dvoje djece <em>Otta Platha</em> i <em>Aurelije Schober Plath.</em> 
@@ -40,6 +61,29 @@ Njezin otac bio je profesor njemačkog podrijetla. Upoznao je Aureliju Schober -
 </ul>
 <br>
 <p><span class="small">1 - Pulitzerova nagrada je američka nagrada za pisanu riječ, koju dodjeljuje Fakultet novinarstva Columbia svakog travnja. Nagradu je ustanovio Joseph Pulitzer, američki novinar mađarskog porijekla.</span></p>
+<br><br><br>
+<label for="pjesme">Odaberi svoju najdražu pjesmu Sylvije Plath:</label>
+<select name="pjesme" id="pjesme">
+	<option value=ŽenskiLazar">Ženski Lazar</option>
+	<option value=Ogledalo">Ogledalo</option>
+	<option value=Groznica41">Groznica 41</option>
+</select>
+<br><br><br>
+
+<p>Odaberi svoj preferirani stil pisanja:</p>
+
+<form id="form2">
+	<label for="stil">Stil pisanja:</label>
+	<input list="stilovi" id="stil" name="stil" placeholder="Odaberi stil pisanja" required>
+<datalist id="stilovi">
+	<option value="Pisma">
+	<option value="Dnevnik">
+	<option value="Esej">
+	<option value="Kratke priče">
+</datalist>
+
+<input type="submit" value="Odaberi">
+</form>
 
 </body>
 
