@@ -12,7 +12,7 @@
 	ul {display: block; list-style: circle;}
 	.small { font-size: 12px; float: right;}
 	#form1 {position: absolute; right: 0; top: 0;box-shadow: 0 0 7px rgba(250,108,153,1);}
-	button {background-color:#ffcccc;position: absolute; bottom: 0; right: 0;} 
+	.obrisi button {background-color:#ffcccc;position: absolute; bottom: 0; right: 0;} 
 	table {width: 500px; height: auto; margin: 10px auto; border: 2px solid LightSeaGreen; border-radius: 10px 25px; border-collapse: separate; overflow:hidden;}
 	th {text-align: center; border: 1px solid LightSeaGreen;}
 	td {text-align: center; border: 1px solid LightSeaGreen; vertical-align: middle}
@@ -22,6 +22,9 @@
 	.video-tekst {text-align:center;}
 	.djela {display: flex; justify-content: space-between; align-items: flex-start;}
 	.desno {margin-right: 500px;}
+	.zvuk {display: inline-block; margin-right: 10px;}
+	.audio {display: inline-block;}
+	.pokreni button {background-color: lightgreen; padding:6px 12px; cursor:pointer;}
 	@media (max-width: 600px) {
 				#form1 {position: static; width 100%; margin-top: 10px;}
 				button {position: static; width 100%; margin-top: 10px;}
@@ -55,7 +58,9 @@
 </fieldset>
 
     <input type="submit" value="Unesi" style="background-color: #ccffcc; border: 2px solid black;">
+<div class="obrisi">
 	<button type="reset">Obriši podatke</button>
+</div>
  </form>
  
 <p><strong>Sylvia Plath</strong> bila je američka pjesnikinja i autorica. Rođena je 27. listopada 1932. godine u Bostonu, a preminula je 11. veljače 1963. godine. <p>
@@ -161,6 +166,19 @@ Njezin otac bio je profesor njemačkog podrijetla. Upoznao je Aureliju Schober -
 <br><br><br>
 <h2>Stakleno zvono, Sylvia Plath</h2>
 <object data="https://literarygitane.wordpress.com/2024/01/20/the-bell-jar/" width="700" height="500"></object>
+<br> <br> <br>
+<div class="zvuk">
+<h2>Sylvia čita svoje pjesme:</h2>
+</div>
+<div class="audio">
+<audio id="audio1" controls>
+  <source src="sylvia reading poems.mp3" type="audio/mpeg">
+</audio>
+<div class="pokreni">
+<button onclick="document.getElementById('audio1').play()"> Pokreni </button>
+</div>
+</div>
+
 </body>
 
 </html>
