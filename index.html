@@ -7,7 +7,8 @@
 <style>
     body {background-color: #e8fbe8;}
     h1 {color: purple;font-weight: 600;font-style: normal;font-family: 'Dancing Script', sans-serif; text-align: center}
-    p {font-style: normal;color: black;}
+    p {font-style: normal;color: black; transition: color 0.3s ease;}
+	p:hover {color: green;}
 	h2 {color: purple; font-weight: 600; font-style: normal; font-family: 'Dancing Script', sans-serif;}
 	ul {display: block; list-style: circle;}
 	.small { font-size: 12px; float: right;}
@@ -24,7 +25,9 @@
 	.desno {margin-right: 500px;}
 	.zvuk {display: inline-block; margin-right: 10px;}
 	.audio {display: inline-block;}
-	.pokreni button {background-color: lightgreen; padding:6px 12px; cursor:pointer;}
+	.pokreni button {background-color: lightgreen; padding:6px 12px; cursor:pointer; transition: background-color 0.1s linear, transform 0.1s ease}
+	.pokreni button:active {background-color: pink; transform: scale(0.80);}
+	input:focus {color: pink;}
 	@media (max-width: 600px) {
 				#form1 {position: static; width 100%; margin-top: 10px;}
 				button {position: static; width 100%; margin-top: 10px;}
