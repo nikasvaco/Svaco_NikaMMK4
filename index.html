@@ -36,6 +36,17 @@
 				.djela {flex-direction: column; align-items: center;}
 				.desno {margin-right: 0; margin-top: 15px;}
 				body {background-color: #e6e6fa;}}
+	#a1 h2 {animation-name: animacija; 
+			animation-duration: 2s; 
+			animation-timing-function: linear; 
+			animation-iteration-count: 1; 
+			animation-direction:alternate;}
+	@keyframes animacija {0% {opacity: 0; transform: translateY (10px);}
+				          100% {opacity: 1; transform: translateY (0);}}
+	#a1 > p {line-height:1.5;}
+	h2 + p {animation: animacija 2s ease-out;}
+	#a1 em:nth-of-type(1) {font-weight: italic; color:darksalmon;}
+	#a1 p:nth-child(2) {background-color: lavenderblush;}
 				
 				
   </style>
@@ -70,9 +81,11 @@
 <br>
 <br>
 <br>
+<div id="a1">
 <h2>Obiteljski život</h2>
 <p>Plath je bila najstarija od dvoje djece <em>Otta Platha</em> i <em>Aurelije Schober Plath.</em> 
 Njezin otac bio je profesor njemačkog podrijetla. Upoznao je Aureliju Schober - više od 20 godina mlađu od njega i kćer austrijskih imigranata - kada je bila studentica na poslijediplomskom studiju na Sveučilištu u Bostonu, gdje joj je on bio profesor njemačkog jezika. Njihov brak nije bio sretan, uglavnom zbog Ottove autoritarne prirode. Umro je 1940. godine, kada je Sylvia Plath imala osam godina. Aurelia Plath potom je uzdržavala obitelj kao instruktorica, a kasnije i izvanredna profesorica na programu za medicinske tajnice na Sveučilištu u Bostonu. Do kraja života bila je čvrsta podupirateljica pisanja svoje slavne kćeri.</p>
+</div> 
 <br> <br>
 <div class="djela">
 	<div class="lijevo">
