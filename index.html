@@ -47,8 +47,24 @@
 	h2 + p {animation: animacija 2s ease-out;}
 	#a1 em:nth-of-type(1) {font-weight: italic; color:darksalmon;}
 	#a1 p:nth-child(2) {background-color: lavenderblush;}
-				
-				
+	.slike {position:relative; height: 300px}
+	.b {position:absolute; animation: anim 5s infinite;}
+	.b1 {animation-delay: 0s;}
+	.b2 {animation-delay: 3s;}
+	@keyframes anim {0% {opacity: 0;}
+					20% {opacity: 1;}
+					50% {opacity: 1;}
+					70% {opacity: 0;}
+					100% {opacity: 0;}}
+	.a {width:200px; percpective: 800px;}
+	.pic {width: 100%; position:relative; transform-style: preserve-3d; transition:transform 0.6s;}
+	.a:hover .pic {transform:rotateY(180deg);}
+	.front, .back {position:absolute; width:100%; backface-visibility:hidden; overflow:hidden;}
+	.front img {width: 100%;object-fit: contain;}
+	.back {background: purple; color:white; display:flex; justify-content: center; align-items:center; text-align:center; transform:rotateY(180deg);}
+	
+	
+	 
   </style>
 <title>Sylvia Plath</title>
 </head>
@@ -194,7 +210,15 @@ Njezin otac bio je profesor njemačkog podrijetla. Upoznao je Aureliju Schober -
 <button onclick="document.getElementById('audio1').play()"> Pokreni </button>
 </div>
 </div>
-
+<br><br>
+<div class="slike">
+<img src="belljar.jpg" alt="Bell Jar1" height="300px" class="b b1">
+<img src="belljar2.jpg" alt="Bell Jar2" height="300px" class="b b2">
+</div>
+<br><br>
+<div class="a"><div class="pic">
+<div class="front"><img src="pic3.jpg" alt="pic3"></div>
+<div class="back">It's a hell of a responsibility to be yourself. It's much easier to be somebody else or nobody at all.</div></div></div>
 </body>
 
 </html>
